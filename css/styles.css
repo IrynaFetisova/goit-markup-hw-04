@@ -6,8 +6,6 @@
 }
 
 body{
-    background-color: #E5E5E5;
-    color: var(--primary-tex-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
@@ -33,6 +31,7 @@ ul,p, h2 {
 .main-nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .list {
@@ -82,14 +81,19 @@ ul,p, h2 {
 
 .site-nav .link:hover, 
 .site-nav .link:focus {
-    color: var(--accent-color);}
+    color: var(--accent-color);
+}
 
-.site-nav .link.current {
-    color: var(--accent-color);}
+.phone:hover,
+.phone:focus {
+    fill: var(--accent-color);
+}
 
 
 .auth-nav {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-left: auto;
 }
 
@@ -98,7 +102,8 @@ ul,p, h2 {
 }
 
 .auth-nav .link {
-    display: block;
+    display: inline-block;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--primary-tex-color);
@@ -112,11 +117,15 @@ ul,p, h2 {
 .auth-nav .link:focus {
     color: var(--accent-color);}
 
-.mailol {
-    width: 161px;
-    height: 16px;
-
+.item > a > svg {
+    vertical-align: middle;
+    fill: var(--primary-tex-color);
+    margin-right: 10px;
 }
+.item:hover > a > svg,
+.item:focus > a > svg {
+    fill: var(--accent-color);
+} 
 
 /* hero */
 
@@ -301,6 +310,20 @@ ul,p, h2 {
     background-color: var(--accent-color);
 }
 
+.persoc-link:hover,
+.persoc-link:focus {
+    fill: var(--primary-bg-color);
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+
+.personal-nav:focus > a > svg {
+    fill: var(--primary-bg-color);
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+
+
 .icon-social {
     align-items: center;
 }
@@ -319,6 +342,7 @@ ul,p, h2 {
     margin-left: 30px;
     fill: #AFB1B8;
     border: 1px solid #AFB1B8;
+    border-radius: 4px;
     align-items: center;
     justify-content: center;
 }
@@ -333,16 +357,22 @@ ul,p, h2 {
     border: var(--accent-color) 1px solid;
 }
 
-
-.nav-svg {
-    align-items: center;
+.icon-partners:hover,
+.icon-partners:focus {
+    fill: var(--accent-color);
+    border: var(--accent-color) 1px solid;
+    border-radius: 4px;
 }
 
+
+.worker-list {
+    background-color: var(--primary-bg-color);
+}
 
 .worker-list .title {
     margin-top: 0; 
     margin-bottom: 10px;
-    color: var(--title-tex-color);
+    background-color: var(--primary-bg-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -521,11 +551,11 @@ ul,p, h2 {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-icon-maill:hover > a,
-.footer-icon-maill:focus > a {
+
+.socicon:focus,
+.socicon:hover {
     background-color: var(--accent-color);
 }
-
 /* portfolio */
 
 .work-list {

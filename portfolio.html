@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,21 +21,40 @@
           <span class="blue">Web</span><span class="studia">Studio</span>
         </a>
 
-        <nav>
+        
           <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студия</a></li>
             <li class="item">
-              <a href="./portfolio.html" class="link current">Портфолио</a>
+              <a href="./index.html" class="link">Студія</a>
             </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакти</a></li>
           </ul>
-        </nav>
+      
 
         <ul class="auth-nav list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
-            >
+          
+            <li class="icon-maill">
+              <a href="mailto:info@devstudio.com">
+                <svg width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-maill"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
+            </li>
+          
+          
+          <li class="icon-maill">
+            <a href="tel:+380961111111">
+              <svg width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </a>
           </li>
           <li class="item">
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
@@ -49,20 +68,20 @@
           <!-- <h1>Портфолио</h1> -->
 
           <ul class="btm-portfolio">
-            <li class="elements">
-              <button type="button" class="button secondary">Все</button>
+            <li>
+              <button type="button" class=" button all">Усі</button>
             </li>
-            <li class="elements">
-              <button type="button" class="button secondary">Веб-сайты</button>
+            <li>
+              <button type="button" class=" button secondary">Веб-сайти</button>
             </li>
-            <li class="elements">
-              <button type="button" class="button secondary">Приложения</button>
+            <li>
+              <button type="button" class="button secondary">Додатки</button>
             </li>
-            <li class="elements">
-              <button type="button" class="button secondary">Дизайн</button>
+            <li>
+              <button type="button" class=" button secondary">Дизайн</button>
             </li>
-            <li class="elements">
-              <button type="button" class="button secondary">Маркетинг</button>
+            <li>
+              <button type="button" class=" button secondary">Маркетинг</button>
             </li>
           </ul>
 
@@ -100,7 +119,7 @@
               />
               <div class="card-text">
                 <h2 class="title">Ресторан Seafood</h2>
-                <p class="text">Приложение</p>
+                <p class="text">Додаток</p>
               </div>
             </li>
             <li class="cards">
@@ -111,7 +130,7 @@
                 height="294"
               />
               <div class="card-text">
-                <h2 class="title">Проект Prime</h2>
+                <h2 class="title">Проєкт Prime</h2>
                 <p class="text">Маркетинг</p>
               </div> 
             </li>
@@ -123,8 +142,8 @@
                 height="294"
               />
               <div class="card-text">
-                <h2 class="title">Проект Boxes</h2>
-                <p class="text">Приложение</p>
+                <h2 class="title">Проєкт Boxes</h2>
+                <p class="text">Додаток</p>
               </div>
             </li>
             <li class="cards">
@@ -147,7 +166,7 @@
                 height="294"
               />
               <div class="card-text">
-                <h2 class="title">Издание Limited Edition</h2>
+                <h2 class="title">Видання Limited Edition</h2>
                 <p class="text">Дизайн</p>
               </div>
             </li>
@@ -160,7 +179,7 @@
                 height="294"
               />
               <div class="card-text">
-                <h2 class="title">Проект LAB</h2>
+                <h2 class="title">Проєкт LAB</h2>
                 <p class="text">Маркетинг</p>
               </div>
             </li>
@@ -173,46 +192,87 @@
               />
               <div class="card-text">
                 <h2 class="title">Growing Business</h2>
-                <p class="text">Приложение</p>
+                <p class="text">Додаток</p>
               </div>
             </li>
           </ul>
-
-          <a class="b">Быстрый старт</a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <div class="logofooter">
-          <a class="logo" href="#">
-            <span class="blue">Web</span><span class="studw">Studio</span>
-          </a>
+        <div class="footer-inform">
+          <div class="logofooter">
+            <a class="logo" href="#">
+              <span class="blue">Web</span><span class="studw">Studio</span>
+            </a>
+          </div>
+        
+          <address class="f-address">
+            <ul class="addres-nav list">
+              <li class="f-element">
+                <a
+                  href="https://goo.gl/maps/xRzrUmFLyVwitiTe6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="add-link"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="f-element">
+                <a href="mailto.info@example.com" class="link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="f-element">
+                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
         </div>
 
-        <address class="f-address">
-          <ul class="addres-nav list">
-            <li class="f-element">
-              <a
-                href="https://goo.gl/maps/xRzrUmFLyVwitiTe6"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="add-link"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="f-element">
-              <a href="mailto.info@example.com" class="link"
-                >info@example.com</a
-              >
-            </li>
-            <li class="f-element">
-              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-            </li>
-          </ul>
-        </address>
-      </div>
+        <div class="join">
+          <h3>Приєднуйтесь</h3>
+            <ul class="f-social">
+              <li class="footer-icon-maill">
+                <a href="">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+        
+              <li class="footer-icon-maill">
+                <a href="">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+        
+              <li class="footer-icon-maill">
+                <a href="">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                  </a>
+              </li>
+          
+              <li class="footer-icon-maill">
+                <a href="">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+                
+            </ul>
+            
+          </section>
+        </div>  
+        
+      
     </footer>
   </body>
 </html>
